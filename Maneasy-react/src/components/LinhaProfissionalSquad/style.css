@@ -1,0 +1,119 @@
+#squad_atualizar {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#squad_atualizar .section_resultado h2 {
+    font-size: 20px;
+    font-family: "VerdanaBold";
+    padding: 50px 0 20px 0;
+}
+
+
+#squad_atualizar .container{
+    overflow-y: scroll;
+    scroll-behavior: smooth;  
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#squad_atualizar .section_titulo {
+    max-width: 80%;
+    display: flex;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+
+}
+
+#squad_atualizar .section_titulo img {
+    padding-right: 20px;
+}
+
+#squad_atualizar label {
+    margin: 0 0 10px 0;
+}
+
+#squad_atualizar .section_pesquisa p {
+    padding: 30px 10px 10px 10px;
+}
+
+#squad_atualizar .section_pesquisa_btn img {
+    width: 34px;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+#squad_atualizar .section_pesquisa_resultado {
+    color: var(--preto);
+    font-family: "VerdanaRegular";
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#squad_atualizar .section_pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#squad_atualizar .icon {
+    position: absolute;
+    /* padding: 11px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: #474545;
+    font-size: 20px;
+}
+
+#squad_atualizar .section_pesquisa_resultado_input {
+    width: 50%;
+}
+
+#squad_atualizar .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+#squad_atualizar input .input-field {
+    width: 100%;
+    max-width: 447px;
+}
+
+#squad_atualizar .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+
+#squad_atualizar .section_resultado{
+    width: 100%;
+}
+
+#squad_atualizar input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}
+
+#squad_atualizar .tabela-scroll{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}

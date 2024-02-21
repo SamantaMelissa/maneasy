@@ -1,0 +1,173 @@
+/* GERAL */
+#entrar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images/background_deslogado.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    overflow: hidden;
+}
+
+#entrar .icon {
+    position: absolute;
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: var(--azule);
+    font-size: 20px;
+}
+
+#entrar .input_field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
+
+#entrar .input_icons {
+    margin-top: 5px;
+}
+
+#entrar input::placeholder {
+    color: var(--azule);
+}
+/* LOGO */
+#entrar .section_img_logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#entrar .section_img_logo img {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* CONTEUDO */
+#entrar .section_conteudo {
+    width: 40%;
+    min-width: 480px;
+    max-width: 730px;
+}
+
+#entrar .section_conteudo h2 {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#entrar .section_conteudo span {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--amarelo);
+}
+
+#entrar .section_input label {
+    color: var(--azule);
+    font-family: "VerdanaRegular";
+}
+
+#entrar .div_email {
+    margin-bottom: 30px;
+
+}
+
+#entrar .link_esqueceu_senha {
+    font-family: "VerdanaRegular";
+    text-align: right;
+    padding: 5px;
+    color: var(--azule);
+    cursor: pointer;
+    text-decoration: none;
+    width: 190px;
+    text-decoration: none;
+}
+
+#entrar .div_esqueceu_senha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#entrar .link_esqueceu_senha:hover {
+    color: black;
+}
+
+#entrar .link_btn_confirmar {
+    margin: 40px 0;
+    text-decoration: none;
+}
+
+#entrar .btn_confimar {
+    border-radius: 100px;
+    height: 40px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--azule);
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#entrar button:hover {
+   background-color: var(--azulc); 
+}
+
+#entrar .div_btn_confirmar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+}
+#entrar .div_cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+#entrar .link_cadastro {
+    margin-top: 15px;
+    font-family: "VerdanaRegular";
+    text-align: center;
+    color: var(--azule);
+    cursor: pointer;
+    text-decoration: none;
+    width: 250px;
+}
+
+#entrar .link_cadastro:hover {
+    color: black;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1200px) {
+    #entrar .section_img_logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #entrar .section_conteudo {
+        min-width: 90%;
+    }
+
+    #entrar .section_conteudo h2 {
+        font-size: 60px;
+    }
+
+    #entrar .section_conteudo span {
+        font-size: 60px;
+    }
+}

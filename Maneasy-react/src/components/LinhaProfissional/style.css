@@ -1,0 +1,23 @@
+#profissional_consulta td {
+    border-bottom: #27272729 solid 1px;
+    height: 50px;
+    border-collapse: collapse;
+}
+
+#profissional_consulta .c1{
+    width: 30%;
+}
+
+#profissional_consulta .c2{
+    width: 60%;
+}
+
+#profissional_consulta .c3{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#profissional_consulta .c3 img{
+    width: 34px;
+}

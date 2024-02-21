@@ -1,0 +1,358 @@
+.container_consulta {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.section_ID_Consultar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+    font-family: "VerdanaRegular";
+
+}
+
+tr {
+    width: 100%;
+}
+
+#consulta label {
+    font-family: "VerdanaRegular";
+}
+
+#consulta .section_titulo {
+    display: flex;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+}
+
+#consulta .section_titulo img {
+    padding-right: 20px;
+}
+
+#consulta .icon {
+    position: absolute;
+    /* padding: 11px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: #474545;
+    font-size: 20px;
+}
+
+#consulta .container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#consulta section .conteudo {
+    width: 80%;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+}
+
+#consulta .pesquisas {
+    /*background-color: aquamarine;*/
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+#consulta .ou {
+    /*background-color: bisque;*/
+    padding: 30px 10px 10px 10px;
+    font-family: "VerdanaRegular";
+}
+
+
+#consulta .section_pesquisa_btn {
+    /* background-color: blueviolet;  */
+    color: #474545;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    padding: 35px 8px 0 8px;
+}
+
+#consulta .position_ou {
+    align-items: center;
+    display: flex;
+}
+
+#consulta h2 {
+    font-size: 20px;
+    font-family: "VerdanaRegular";
+    padding: 0 0 20px 0;
+    color: #474545;
+}
+
+#consulta table {
+    table-layout: fixed;
+
+    font-family: "VerdanaRegular";
+    /* color: #474545;*/
+
+    justify-content: space-between;
+    border-spacing: 0;
+}
+
+#consulta select {
+    border-radius: 100px;
+    padding: 4px;
+    background: transparent;
+}
+
+#consulta .tabela-teste {
+    width: 100%;
+    background-color: royalblue;
+    height: 311px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#consulta .fundo_amarelo {
+    background-color: var(--amarelo);
+}
+
+#consulta .section_pesquisa_resultado_input {
+    width: 100%;
+}
+
+#consulta .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+thead {
+    gap: 12px;
+    display: flex;
+    width: 100%;
+}
+
+#consulta .section_pesquisa p {
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+    display: flex;
+}
+
+#consulta .section_pesquisa_btn img {
+    width: 34px;
+}
+
+#consulta .section_pesquisa_resultado {
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+}
+
+#consulta .section_pesquisa {
+    display: flex;
+    justify-content: space-between;
+    color: var(--preto);
+    width: 100%;
+    margin-left: 300px;
+}
+
+/* 
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+} */
+
+#consulta .tabela_scroll {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 5%;
+}
+
+#consulta .lista_consultas {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    color: var(--preto);
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 5%;
+    width: 100%;
+}
+
+#consulta table {
+    width: 100%;
+}
+
+#consulta input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}
+
+
+select {
+    background: transparent;
+    border-radius: 100px;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 15px;
+    border: 1px solid #474545;
+}
+
+.pesquisa_tipo {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisa_and_filtro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.section_ID_Consultar {
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+    font-family: "VerdanaRegular";
+}
+
+
+#consulta .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+select .input-field {
+    padding: 10px 10px 10px 10px;
+
+}
+
+.input_nome {
+    width: 100%;
+}
+
+.filtro {
+    padding-bottom: 8px;
+}
+
+#consultas_titulo p {
+    font-size: 10px;
+}
+
+.linha_consultas_nome_profissional {
+    width: 30%;
+    max-width: 269.91px;
+}
+
+.linha_consultas_nome_projeto {
+    width: 40%;
+    max-width: 359.88px;
+}
+
+.linha_consultas_tipo {
+    width: 10%;
+    max-width: 89.96px;
+}
+
+.linha_consultas_status {
+    width: 20%;
+    max-width: 134.95px;
+}
+
+.linha_titulo {
+    gap: 12px;
+    height: 50px;
+}
+
+.linha_titulo th {
+    display: flex;
+    justify-content: space-between;
+}
+
+#consultas_titulo {
+    width: 905px;
+    gap: 12px;
+}
+
+
+.select-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px;
+    /* Adicione o padding desejado aqui */
+    box-sizing: border-box;
+}
+
+.select-wrapper::after {
+    content: '\25BC';
+    /* Código unicode para a seta para baixo */
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #47454567;
+}
+
+.titulos_consulta {
+    display: flex;
+    width: 899.71px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .conjunto-botoes {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        margin-right: 0;
+    }
+
+    button[type="reset"] {
+        margin-right: 15px;
+    }
+
+    .pesquisa_and_filtro {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    #consulta .section_pesquisa {
+        margin-left: 0px;
+    }
+}
+

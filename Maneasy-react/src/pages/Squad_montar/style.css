@@ -1,0 +1,345 @@
+.squad_montar section {
+    font-family: "VerdanaRegular";
+}
+
+.squad_montar {
+    display: flex;
+    overflow: hidden;
+}
+
+.squad_montar .container {
+    width: 100%;
+    margin-left: 300px;
+}
+
+
+.squad_montar .section_titulo {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+
+}
+
+.squad_montar .section_titulo img {
+    padding-right: 20px;
+}
+
+.squad_montar form {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.squad_montar .section_cadastro_squad_btn img {
+    width: 34px;
+    padding-top: 30px;
+    margin-left: 10px
+}
+
+/*INPUT PESQUISA*/
+
+.squad_montar .icon {
+    position: absolute;
+    padding: 10.5px 20px 7.5px 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+.squad_montar .icon_calendario {
+    padding: 10.5px 20px 7.5px 10px;
+
+}
+
+
+
+.squad_montar .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+.squad_montar .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+
+.squad_montar .titulo_lista_prof {
+    font-family: "VerdanaBold";
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.squad_montar .section_pesquisa p {
+    padding: 0px 10px 10px 10px;
+}
+
+.squad_montar .section_pesquisa_btn img {
+    width: 34px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.squad_montar .section_pesquisa_resultado {
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+}
+
+.squad_montar .section_pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+}
+
+.squad_montar .espacamento {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Resultado pesquisa*/
+
+.squad_montar .section_resultado_dados {
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+
+}
+
+.squad_montar .section_resultado_dados div {
+    display: flex;
+    justify-content: space-between;
+    /* width: 700px; */
+    gap: 50px;
+}
+
+.squad_montar .section_resultado_dados img {
+    margin: 0;
+    width: 34px;
+}
+
+.squad_montar .section_resultado_dados_id {
+    /* width: 270px; */
+}
+
+.squad_montar .section_resultado_dados_nome {
+    /* width: 518px; */
+}
+
+.squad_montar .section_resultado_dados_btn {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.squad_montar .form_date_criacao {
+    width: 30%;
+}
+
+.squad_montar .form_date {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.squad_montar input[type="date"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "VerdanaRegular";
+    width: 100%;
+}
+
+.squad_montar ::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    display: none;
+}
+
+
+.squad_montar .section_objetivo_projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.squad_montar .section_objetivo_projeto p {
+    padding: 30px 10px 10px 10px;
+}
+
+.squad_montar .section_objetivo_projeto_label_textarea {
+    width: 100%;
+}
+
+.squad_montar textarea {
+    width: 100%;
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #474545;
+}
+
+
+
+.squad_montar .form_criacao_inicio_termino {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.squad_montar .form_criacao_inicio_termino .icon {
+    font-size: 16px;
+
+}
+
+.squad_montar .section_pesquisa_resultado_input {
+    width: 100%;
+}
+
+.squad_montar .section_pesquisa_btn {
+    display: flex;
+}
+
+.squad_montar .form_date_criacao_inicio_termino {
+    width: 100%;
+}
+
+.squad_montar textarea {
+    margin-top: 10px;
+}
+
+.squad_montar .section_resultado h2 {
+    font-size: 20px;
+    font-family: "VerdanaRegular";
+    padding: 40px 0 20px 0;
+    color: var(--preto);
+}
+
+.squad_montar .form_id {
+    width: 100%;
+    display: flex;
+    margin-right: 30px;
+    gap: 5%;
+}
+
+.squad_montar .section_pesquisa_resultado_input_id {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.squad_montar .section_pesquisa_resultado_input_pesquisa {
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.squad_montar .section_nome_projeto {
+    width: 100%;
+    display: flex;
+}
+
+.squad_montar .tabela_scroll {
+    width: 100%;
+    /* padding-right: 9%; */
+    /* height: 298px; */
+    scroll-behavior: smooth;
+    min-height: 300px;
+    color: var(--preto);
+
+}
+
+.squad_montar html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+.squad_montar html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+
+.squad_montar html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+.squad_montar textarea {
+    resize: none;
+}
+
+
+
+/*MIDIA DE 1000px*/
+
+@media screen and (max-width: 1000px) {
+
+    .form_date,
+    .squad_montar .form_id {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .form_id,
+    .form_id .section_pesquisa_resultado_input,
+    .squad_montar .form_criacao_inicio_termino {
+        width: 100%;
+    }
+
+    .squad_montar .section_resultado_dados{
+        margin-bottom: 10px;
+    }
+
+    .squad_montar .section_resultado_dados>div {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .section_resultado_dados>div p {
+        margin-top: 5px;
+    }
+
+    .squad_montar .section_pesquisa_resultado_input_id{
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 920px) {
+    .section_pesquisa_btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .squad_montar .container {
+        margin-left: 0px;
+    }
+}
+
+/* MIDIA 600PX */
+@media screen and (max-width: 600px) {
+    .section_resultado_dados {
+        font-size: 15px;
+    }
+
+    .section_resultado_dados_btn {
+        margin-left: 15px;
+    }
+}
+

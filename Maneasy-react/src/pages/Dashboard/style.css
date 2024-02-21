@@ -1,0 +1,535 @@
+:root {
+    --projeto: #2274AC;
+    --demanda: #499AD1;
+    --disponivel: #50B747;
+    --afastamento: #80DE78;
+    --ferias: #FFD100;
+    --cinza: #bdbbbb;
+    --preto: #474545;
+
+    --barra_interna_hard_skill: #2274AC;
+    --barra_interna_andamento_projeto: #50B747;
+    --barra_interna_demanda: #2274AC;
+    --barra_interna_chamado: #499AD1;
+    --barra_interna_finalizados: #FFE880;
+
+    /*Status do Profissional*/
+
+    --projeto_indicador: 40%;
+    --demanda_indicador: 25%;
+    --disponivel_indicador: 23%;
+    --afastamento_indicador: 08%;
+    --ferias_indicador: 04%;
+
+    /*Hard Skill x Porfissional*/
+
+    --barra_01: 80%;
+    --barra_02: 25%;
+    --barra_03: 23%;
+    --barra_04: 30%;
+    --barra_05: 70%;
+    --barra_06: 88%;
+    --barra_07: 79%;
+    --barra_08: 10%;
+    --barra_09: 15%;
+
+    /*Andamento dos projetos*/
+
+    --barra_interna_andamento_projeto_01: 52%;
+    --barra_interna_andamento_projeto_02: 8%;
+    --barra_interna_andamento_projeto_03: 88%;
+    --barra_interna_andamento_projeto_04: 82%;
+
+    /*Andamento dos projetos - Barra Azul Escuro*/
+
+    --barra_interna_demanda_01: 52%;
+    --barra_interna_demanda_02: 89%;
+    --barra_interna_demanda_03: 78%;
+    --barra_interna_demanda_04: 71%;
+    --barra_interna_demanda_05: 68%;
+
+    /*Andamento dos projetos - Barra Azul Claro*/
+
+    --barra_interna_chamado_01: 15%;
+    --barra_interna_chamado_02: 10%;
+    --barra_interna_chamado_03: 36%;
+    --barra_interna_chamado_04: 48%;
+    --barra_interna_chamado_05: 29%;
+}
+
+#containerDashboard {
+    display: flex;
+    height: 100%;
+    /* position: relative; */
+}
+
+#containerDashboard section {
+    font-family: "VerdanaRegular";
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 10%;
+}
+
+#containerDashboard .container_dashboard {
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+#containerDashboard .section_geral {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+#containerDashboard .section_titulo {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+
+}
+
+#containerDashboard .section_titulo img {
+    padding-right: 20px;
+}
+
+/* #containerDashboard container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
+
+/*status profissional*/
+
+#containerDashboard .titulo_dashboard {
+    color: var(--preto);
+    font-family: "VerdanaRegular";
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+#containerDashboard .section_status_profissional {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#containerDashboard .grafico_legenda {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#containerDashboard .confirguracao_geral {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#containerDashboard .indicador {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+#containerDashboard .indicador01 {
+    background-color: var(--projeto);
+}
+
+#containerDashboard .indicador02 {
+    background-color: var(--demanda);
+}
+
+#containerDashboard .indicador03 {
+    background-color: var(--disponivel);
+}
+
+#containerDashboard .indicador04 {
+    background-color: var(--afastamento);
+}
+
+#containerDashboard .indicador05 {
+    background-color: var(--ferias);
+}
+
+
+#containerDashboard .circulo {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerDashboard .circulo01 {
+    width: 225px;
+    height: 225px;
+    background-image: conic-gradient(var(--projeto) var(--projeto_indicador), var(--cinza) var(--projeto_indicador));
+}
+
+#containerDashboard .circulo02 {
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(var(--demanda) var(--demanda_indicador), var(--cinza) var(--demanda_indicador));
+}
+
+#containerDashboard .circulo03 {
+
+    width: 175px;
+    height: 175px;
+    background-image: conic-gradient(var(--disponivel) var(--disponivel_indicador), var(--cinza) var(--disponivel_indicador));
+
+}
+
+#containerDashboard .circulo04 {
+
+    width: 150px;
+    height: 150px;
+    background-image: conic-gradient(var(--afastamento) var(--afastamento_indicador), var(--cinza) var(--afastamento_indicador));
+
+}
+
+#containerDashboard .circulo05 {
+
+    width: 125px;
+    height: 125px;
+    background-image: conic-gradient(var(--ferias) var(--ferias_indicador), var(--cinza) var(--ferias_indicador));
+
+}
+
+#containerDashboard .circulo06 {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+}
+
+/*Hard Skill x Profissionais*/
+
+#containerDashboard .indicador_hard_skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 225px;
+    margin-right: 20px;
+    margin-bottom: 13px;
+}
+
+#containerDashboard .hard_skill_profissionais {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+}
+
+#containerDashboard .hard_skill_profissionais>div {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    width: 100%;
+
+}
+
+#containerDashboard .barras {
+    display: flex;
+}
+
+#containerDashboard .container_barras {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#containerDashboard .barra_externa {
+
+    height: 225px;
+    width: 18px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#containerDashboard .barra_interna {
+    width: 18px;
+    background-color: var(--barra_interna_hard_skill);
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+
+#containerDashboard .barra_01 {
+    height: var(--barra_01);
+}
+
+#containerDashboard .barra_02 {
+    height: var(--barra_02);
+}
+
+#containerDashboard .barra_03 {
+    height: var(--barra_03);
+}
+
+#containerDashboard .barra_04 {
+    height: var(--barra_04);
+}
+
+#containerDashboard .barra_05 {
+    height: var(--barra_05);
+}
+
+#containerDashboard .barra_06 {
+    height: var(--barra_06);
+}
+
+#containerDashboard .barra_07 {
+    height: var(--barra_07);
+}
+
+#containerDashboard .barra_08 {
+    height: var(--barra_08);
+}
+
+#containerDashboard .barra_09 {
+    height: var(--barra_09);
+}
+
+
+/**/
+
+
+
+#containerDashboard .andamento_projeto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+}
+
+#containerDashboard .barra_externa_andamento_projeto {
+    width: 400px;
+    height: 18px;
+    background-color: #D9D9D9;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+}
+
+#containerDashboard p {
+    font-family: "VerdanaRegular";
+    font-size: 13px;
+    color: var(--preto);
+}
+
+#containerDashboard h3 {
+    font-family: "VerdanaRegular";
+    font-size: 13px;
+    color: var(--preto);
+}
+
+#containerDashboard .status {
+    display: flex;
+    justify-content: space-between;
+}
+
+#containerDashboard .container_andamento_projeto {
+    width: 400px;
+}
+
+#containerDashboard .container_andamento_projeto>div {
+    margin: 0 0 20px 0;
+}
+
+#containerDashboard .barra_interna_andamento_projeto_01 {
+    width: var(--barra_interna_andamento_projeto_01);
+    background-color: var(--barra_interna_andamento_projeto);
+    height: 18px;
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_interna_andamento_projeto_02 {
+    width: var(--barra_interna_andamento_projeto_02);
+    background-color: var(--barra_interna_andamento_projeto);
+    height: 18px;
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_interna_andamento_projeto_03 {
+    width: var(--barra_interna_andamento_projeto_03);
+    background-color: var(--barra_interna_andamento_projeto);
+    height: 18px;
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_interna_andamento_projeto_04 {
+    width: var(--barra_interna_andamento_projeto_04);
+    background-color: var(--barra_interna_andamento_projeto);
+    height: 18px;
+    border-radius: 5px;
+}
+
+/**/
+
+#containerDashboard .container_barras_demanda_chamado {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerDashboard .demanda_chamado {
+    display: flex;
+    gap: 10px;
+}
+
+#containerDashboard .barra_externa_demanda_chamado {
+
+    height: 225px;
+    width: 18px;
+    background-color: var(--barra_interna_finalizados);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#containerDashboard .barra_demanda01 {
+    background-color: var(--barra_interna_demanda);
+    width: 18px;
+    height: var(--barra_interna_demanda_01);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_chamado01 {
+    background-color: var(--barra_interna_chamado);
+    width: 18px;
+    height: var(--barra_interna_chamado_01);
+    border-radius: 5px;
+}
+
+
+
+#containerDashboard .barra_demanda02 {
+    background-color: var(--barra_interna_demanda);
+    width: 18px;
+    height: var(--barra_interna_demanda_02);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_chamado02 {
+    background-color: var(--barra_interna_chamado);
+    width: 18px;
+    height: var(--barra_interna_chamado_02);
+    border-radius: 5px;
+}
+
+
+#containerDashboard .barra_demanda03 {
+    background-color: var(--barra_interna_demanda);
+    width: 18px;
+    height: var(--barra_interna_demanda_03);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_chamado03 {
+    background-color: var(--barra_interna_chamado);
+    width: 18px;
+    height: var(--barra_interna_chamado_03);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_demanda04 {
+    background-color: var(--barra_interna_demanda);
+    width: 18px;
+    height: var(--barra_interna_demanda_04);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_chamado04 {
+    background-color: var(--barra_interna_chamado);
+    width: 18px;
+    height: var(--barra_interna_chamado_04);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_demanda05 {
+    background-color: var(--barra_interna_demanda);
+    width: 18px;
+    height: var(--barra_interna_demanda_05);
+    border-radius: 5px;
+}
+
+#containerDashboard .barra_chamado05 {
+    background-color: var(--barra_interna_chamado);
+    width: 18px;
+    height: var(--barra_interna_chamado_05);
+    border-radius: 5px;
+}
+
+
+#containerDashboard .grafico_demanda_chamado {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+}
+
+#containerDashboard .grafico_demanda_chamado>div {
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    width: 100%;
+}
+
+#containerDashboard .legenda_demanda_chamado {
+    display: flex;
+    gap: 70px;
+}
+
+#containerDashboard .legenda_demanda_chamado01 {
+    background-color: var(--barra_interna_demanda);
+}
+
+#containerDashboard .legenda_demanda_chamado02 {
+    background-color: var(--barra_interna_chamado);
+}
+
+#containerDashboard .legenda_demanda_chamado03 {
+    background-color: var(--barra_interna_finalizados);
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+
+
+#containerDashboard .destaque_status {
+    font-family: "VerdanaBold";
+}
+
+#containerDashboard .span_status {
+    font-family: "VerdanaRegular";
+}
+
+#containerDashboard .container_dashboard {
+    background-image: url(../../assets/images/background_logado.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}

@@ -1,0 +1,369 @@
+
+/* CLASSES GENERICAS */
+
+#chamado_atualizar .icon {
+    position: absolute;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#chamado_atualizar .icon_solicitante_profissional {
+    position: absolute;
+    /* padding: 10.5px 20px 7.5px 10px;  */
+    align-items: center;
+    color: #474545;
+    min-width: 40px;
+    font-size: 20px;    
+    margin-top: 10px;
+}
+
+#chamado_atualizar .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+
+#chamado_atualizar .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+#chamado_atualizar{
+    display: flex;
+}
+
+#chamado_atualizar section{
+    width: 80%;
+    height: 100vh;
+}
+
+#chamado_atualizar input[type="date"]::-webkit-inner-spin-button,
+#chamado_atualizar input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+#chamado_atualizar input[type="date"] {
+    text-transform: uppercase;
+    font-family: "VerdanaRegular";
+    width: 100%;
+}
+
+#chamado_atualizar textarea {
+    width: 100%;
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #474545;
+    resize: none;
+    margin: 15px 0 20px 0;
+}
+
+/* TITULO */
+#chamado_atualizar section .container-grid {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px 0 0 40px;
+    padding: 50px 0px 0px 0px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#chamado_atualizar section .conteudo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#chamado_atualizar section .cadastrar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#chamado_atualizar section .cadastrar h1 {
+    font-family: "SpartanBold";
+    font-size: 45px;
+    line-height: 44px;
+    color: var(--azule);
+}
+
+/*BUTTONS*/
+#chamado_atualizar section .buttons-grid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin: 25px 0px 39px 0px;
+}
+
+#chamado_atualizar section .button-cadastrar {
+    width: 130px;
+    height: 50px;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+    font-family: "VerdanaRegular";
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--preto);
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+#chamado_atualizar .button-cadastrar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: var(--azule);
+    height: 2px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#chamado_atualizar .button-cadastrar:hover:before,
+.button-cadastrar:focus:before,
+.button-cadastrar:active:before {
+    left: 0;
+}
+
+#chamado_atualizar section .button-consultar {
+    width: 130px;
+    height: 50px;
+    background: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+    font-family: "VerdanaRegular";
+    font-size: 20px;
+    line-height: 34px;
+    color: var(--preto);
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+#chamado_atualizar .button-consultar:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: var(--azule);
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#chamado_atualizar .button-consultar:hover:before,
+.button-consultar:focus:before,
+.button-consultar:active:before {
+    right: 0;
+}
+
+/* CHAMADO NUMERO */
+#chamado_atualizar section .chamados {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#chamado_atualizar section .chamados span {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#chamado_atualizar section .num-chamados {
+    width: 359px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+#chamado_atualizar section .lupa {
+    width: 34px;
+    margin-left: 20px;
+}
+
+
+/* SOLICITANTE E PROFISSIONAL / NOME */
+#chamado_atualizar section .info-grid {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#chamado_atualizar section .info-grid>span {
+    display: flex;
+    align-items: center;
+
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+}
+
+#chamado_atualizar section .text-span {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+}
+
+#chamado_atualizar .solicitante {
+    width: 48%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+#chamado_atualizar .profissional {
+    width: 48%;
+    flex-direction: column;
+    display: flex;
+}
+
+/* DATAS */
+
+#chamado_atualizar section .datas div {
+    width: 100%;
+}
+
+#chamado_atualizar section .datas {
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#chamado_atualizar section .datas span {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+}
+
+#chamado_atualizar section .data-conte {
+    width: 240px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+}
+
+#chamado_atualizar section time {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+    padding-left: 16px;
+}
+
+/* DESCRIÇOES */
+#chamado_atualizar section .chamado-info span {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+}
+
+#chamado_atualizar section textarea {
+    font-family: "VerdanaRegular";
+    font-size: 13px;
+    line-height: 28px;
+    text-align: justify;
+
+}
+
+#chamado_atualizar section .chamado-info {
+    margin-top: 30px;
+}
+
+#chamado_atualizar section .chamado-info .chamado-form {
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+
+/* BOTÕES CONFIRMAR  */
+#chamado_atualizar section .footer-options {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+#chamado_atualizar section .footer-options>div {
+    display: flex;
+    gap: 10px;
+}
+
+#chamado_atualizar section .footer-options img {
+    width: 34px;
+    height: 34px;
+}
+
+#chamado_atualizar section .footer-options .tamanho-icone {
+    width: 30px;
+    height: 30px;
+}
+
+#chamado_atualizar textarea {
+    resize: none;
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+#chamado_atualizar input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}

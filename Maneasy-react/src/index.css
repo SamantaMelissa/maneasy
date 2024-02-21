@@ -1,0 +1,39 @@
+/* FONTS */
+
+/* FONTS SPARTAN */
+@font-face {
+    font-family: "SpartanBold" ;
+    src: url(../src/assets/fonts/League_Spartan/LeagueSpartan_Bold.ttf);
+}
+
+/* FONTS VERDANA */
+@font-face {
+    font-family: "VerdanaRegular";
+    src: url(./assets/fonts/Verdana/verdana_regular.ttf);
+}
+
+@font-face {
+    font-family: "VerdanaBold";
+    src: url(./assets/fonts/Verdana/verdana_bold.ttf);
+}
+
+
+/* OPÇOES DE RESET */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+}
+
+:root{
+    --amarelo: #ffd100;
+    --azule: #2274ac;
+    --azulc: rgb(0, 148, 196);
+    --preto: #474545;
+    --cinza: #BEBCBC;
+    --verdee: #2C9123;
+    --vermelho: #C25348;
+    --branco: #fff;
+}

@@ -1,0 +1,21 @@
+#demanda_cadastro .footer-options{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 20px 0px 20px 0px;
+}
+
+#demanda_cadastro .footer-options>div{
+    display: flex;
+    gap: 10px;
+}
+
+#demanda_cadastro .footer-options img{
+    width: 34px;
+    height: 34px;
+}
+
+#demanda_cadastro .footer-options .tamanho-icone{
+    width: 34px;
+    height: 34px;
+}

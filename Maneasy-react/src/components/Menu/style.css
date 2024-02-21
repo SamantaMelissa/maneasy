@@ -1,0 +1,160 @@
+#aside_menu {
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--azule);
+}
+
+#aside_menu .logo {
+    width: 150px;
+    margin: 90px auto 40px;
+}
+
+#aside_menu .nav_btn_menu {
+    gap: 7px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aside_menu .icon_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    margin: 0 10px 0 0;
+    background-color: var(--amarelo);
+    border-radius: 100px;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+#aside_menu .nav_btn_menu>a:hover {
+    background-color: var(--amarelo);
+}
+
+#aside_menu .nav_btn_menu a {
+    margin: 8px 0;
+    width: 180px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    color: var(--preto);
+}
+
+#aside_menu #footer_menu {
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--azulc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aside_menu .icon_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#aside_menu #footer_menu {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    color: var(--branco);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+}
+
+#aside_menu #footer_menu:hover {
+    background-color: #075185;
+}
+
+#aside_menu .link_footer {
+    text-decoration: none;
+}
+
+
+#checkbox_menu {
+    position: absolute;
+    opacity: 0;
+}
+
+#menu_hamburguer {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    min-width: 30px;
+    /* perguntar pq só fica fixo com min-width e não com width*/
+    bottom: -20px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+#menu_hamburguer span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: var(--azule);
+    transition: 0.25s ease-in-out;
+}
+
+#menu_hamburguer span:nth-child(1) {
+    top: 0px;
+}
+
+#menu_hamburguer span:nth-child(2) {
+    top: 8px;
+}
+
+#menu_hamburguer span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox_menu:checked+#menu_hamburguer span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox_menu:checked+#menu_hamburguer span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox_menu:checked+#menu_hamburguer span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    #aside_menu {
+        left: -300px;
+
+    }
+
+    #checkbox_menu:checked~#aside_menu {
+        left: 0px;
+        transition: 0.25s ease-in-out;
+    }
+
+    #checkbox_menu:checked~#menu_hamburguer span{
+        background: white;
+    }
+}

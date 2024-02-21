@@ -1,0 +1,80 @@
+
+#squad_atualizar table {
+    width: 100%;
+}
+
+#squad_atualizar_lista .section_resultado_dados {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+    gap: 20px;
+}
+
+#squad_atualizar_lista .section_resultado_dados>tr {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    width: 100%;
+}
+
+#squad_atualizar_lista .section_resultado_dados img {
+    margin: 0;
+    width: 34px;
+}
+
+#squad_atualizar_lista .section_resultado_dados_id {
+    width: 20%;
+}
+
+#squad_atualizar_lista .section_resultado_dados_tipo {
+    width: 20%;
+}
+
+#squad_atualizar_lista .section_resultado_dados_nome {
+    width: 60%;
+}
+
+#squad_atualizar_lista .section_resultado_dados_btn {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#squad_atualizar_lista .lista_consultas {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    color: var(--preto);
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/* style.css */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+  }
+  
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: fixed;
+    z-index: 10000;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
+  

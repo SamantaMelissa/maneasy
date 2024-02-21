@@ -1,0 +1,147 @@
+.consulta_lista {
+    width: 905px;
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+#consulta select {
+    border-radius: 100px;
+    padding: 10px;
+    background: transparent;
+}
+
+/*tabela*/
+
+
+#consulta .linha_consultas {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+
+}
+
+
+#consulta .button_consulta {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#consulta .linha_consultas_nome_profissional {
+    width: 30%;
+    /* max-width: 15ch; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#consulta .linha_consultas_nome_projeto {
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+
+
+}
+
+#consulta .linha_consultas_tipo {
+    width: 10%;
+
+
+}
+
+#consulta .linha_consultas_status {
+    width: 20%;
+}
+
+#consulta .linha_consultas_status {
+    width: 15%;
+    font-family: "VerdanaRegular";
+}
+
+#consulta td img {
+    width: 34px;
+}
+
+#consulta td {
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    border-collapse: collapse;
+
+}
+
+#consulta tr {
+    display: flex;
+    align-items: center;
+    border-bottom: #27272729 solid 1px;
+}
+
+@media screen and (max-width: 1350px) {
+    thead {
+       width: 60%;
+    }
+
+    td {
+        display: grid;
+        gap: 10px;
+    }
+
+    td::before {
+        font-weight: 700;
+        text-transform: capitalize;
+        width: 100%;
+
+    }
+
+    /* td:first-child {
+        padding-top: 24px;
+    } */
+
+    /* td:last-child {
+        padding-bottom: 24px;
+    } */
+
+    .consulta_lista{
+        flex-direction: column;
+    }
+/*     
+    .consulta_lista td::before {
+        content: '';
+    }
+*/
+    #consulta .consulta_lista td {
+       width: 100%;
+       max-width: 100%;
+    } 
+
+    .section_ID_Consultar {
+        width: 100%;
+    }
+
+    .pesquisa_tipo {
+        width: 100%;
+    }
+
+    .section_ID_Consultar {
+        margin: 0;
+    }
+
+    .pesquisa_and_filtro{
+        gap: 10px;
+    }
+    
+    #consulta h2 {
+        padding-top: 50px;
+    }
+    
+
+}
+

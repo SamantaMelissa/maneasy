@@ -1,0 +1,23 @@
+#demanda_consulta td {
+    border-bottom: #27272729 solid 1px;
+    height: 50px;
+    border-collapse: collapse;
+}
+
+#demanda_consulta .c1{
+    width: 30%;
+}
+
+#demanda_consulta .c2{
+    width: 60%;
+}
+
+#demanda_consulta .c3{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#demanda_consulta .c3 img{
+    width: 34px;
+} 
